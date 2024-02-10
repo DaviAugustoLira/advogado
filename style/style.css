@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: Woodland;
+    src: url(../fontes/PPWoodland-Ultralight.otf);
+}
+
+:root{
+    --cor_principal:#111720;
+    --cor_botões: #2e2e4b;
+    --cor_logo: #E4BD8C;
+
+    --fonte_padrao: Arial, Helvetica;
+    --fonte_logo: Woodland, serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    margin: 0;
+    background-color: var(--cor_principal);
+    background: #2e2e4b url(../imagens/fundo02.jpg) top center no-repeat;
+    background-size: cover;
+    font-size: 1em;
+}
+nav{
+    background-color: hsla(216, 31%, 10%, 0.69);
+}
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 700px;
+    max-width: 1800px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:auto;
+}
+.cabecalho-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.cabecalho-links{
+    margin: 10px 0px;
+}
+
+.cabecalho-item{
+    text-decoration: none;
+    padding-left: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.secao-cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    box-shadow: 0px 3px 5px #1A2938;
+}
+.logo-imagem{
+    width: auto;;
+    height: auto;
+    display: inline;
+}
+.botao{
+    cursor: pointer;
+    background-color: #c08c4c;
+    border-radius: 5px ;
+    border: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+main{
+    margin: auto;
+}
+.atuacoes-secao{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+
+}
+.atuacoes-secao > .digital,.penal,.familiar{
+    height: 300px;
+    width: 450px;
+}
+.digital{
+    border-bottom-left-radius: 20px;
+    margin-right: 30px;
+}
+.direito-digital{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.direito-digital > img{
+    background-color: lightgray;
+    border-radius:50%;
+    height: 90px;
+    width: 90px;
+}
+.direito-digital > p{
+    text-indent: 1.5em;
+}
+.familiar{
+    border-bottom-right-radius: 20px;
+}
+.direito-familiar{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.direito-familiar > img{
+    height: 90px;
+    width: 90px;
+}
+.direito-familiar > p{
+    text-indent: 1.5em;
+}
+
+
+
+.sobre-advogado{
+    display: flex;
+    height: 500px;
+    width: auto;
+    margin-bottom:30px;
+    background-color: lightgray;
+    padding-top: 20px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.37);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;    
+}
+
+.sobre-advogado div{
+    max-width: 550px;
+}
+
+.sobre-advogado div > h1{    
+    font-family: var(--fonte_logo);
+    padding: 20px;
+    color: black;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor_principal);
+    width: auto;
+    height: 300px;
+    color: white;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer > iframe{
+    height: 250px;
+    margin: 30px;
+    border-radius: 20px;
+}
+.contatos{
+    margin-left: 30px;  
+}
+.contatos > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contatos > ul > a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    color: white;
+}
+.imagem-contato{
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
