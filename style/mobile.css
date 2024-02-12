@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+@font-face {
+    font-family: Woodland;
+    src: url(../fontes/PPWoodland-Ultralight.otf);
+}
+:root{
+    --cor_principal:#111720;
+    --cor_botões: #2e2e4b;
+    --cor_logo: #E4BD8C;
+
+    --fonte_padrao: Arial, Helvetica;
+    --fonte_logo: Woodland, serif;
+    --fonte_numeros:"Protest Strike", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    max-height: 100vh;
+    max-width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.navegacao{
+    display: none;
+}
+
+.cabecalho{
+    background: url(../imagens/fundo02.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.secao-cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.logo-imagem{
+    height: 100px;
+    width: auto;
+}
+.botao{
+    background-color: #d49f5dda;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+}
+.atuacoes-secao{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 30px 0;
+    text-align: center;
+    background-color: lightgray;
+    padding: 20px;
+    padding-bottom:50px;
+}
+.atuacoes-secao p{
+    text-align: justify;
+    text-indent: 1.5em;
+}
+.imagem-familia > i, .imagem-trabalhador > i, .imagem-digital > i{
+    color: var(--cor_logo);
+    background-color: var(--cor_principal);
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.dados-complementares > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-align: center;
+}
+.dados-complementares > ul > li{
+    list-style-type: none;
+}
+.dados-complementares > ul > li > strong{
+    color: #c28d4c;
+    font-family: 'Protest Strike';
+    font-size: 1.8em;
+}
+.dados-complementares > ul > li > div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 0.8em;
+}
+.sobre-advogado{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.sobre-advogado > div > img{
+    margin: 0 ;
+    height: auto;
+    width: 200px;
+}
+.sobre-advogado > div > h1{
+    text-align: center;
+    font-family: var(--fonte_logo);
+}
+.sobre-advogado > div > p{
+    text-align: justify;
+    text-indent: 1.5em;
+    margin-bottom: 50px;
+    padding: 8px;
+}
+.imagem-advogado{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: var(--cor_principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer > div > ul{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+footer > div > ul > a{
+    text-decoration: none;
+    color: white;
+    margin: 20px 0 0 0;
+    
+}
+footer > div > ul > a > img{      
+    height: 20px;
+    width: 20px;
+}
+footer > iframe{
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
