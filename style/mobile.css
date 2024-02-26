@@ -6,10 +6,12 @@
     font-family: Woodland;
     src: url(../fontes/PPWoodland-Ultralight.otf);
 }
+
+/* 189 138 0 */
 :root{
     --cor_principal:#111720;
     --cor_botões: #2e2e4b;
-    --cor_logo: #E4BD8C;
+    --cor_logo: rgb(228, 188, 139);
 
     --fonte_padrao: Arial, Helvetica;
     --fonte_logo: Woodland, serif;
@@ -33,6 +35,7 @@ body, html{
 .cabecalho{
     background: url(../imagens/fundo02.jpg) center center no-repeat;
     background-size: cover;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.603);
 }
 
 .secao-cabecalho{
@@ -59,29 +62,65 @@ body, html{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 0 30px 0;
+    justify-content: center;
     text-align: center;
     background-color: lightgray;
     padding: 20px;
     padding-bottom:50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.39);
+}
+.atuacoes-secao > div{
+    margin-top: 10px;
 }
 .atuacoes-secao p{
     text-align: justify;
     text-indent: 1.5em;
 }
+#digital{
+    background-color: #111720;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-width: 450px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.603);
+}
+#familiar{
+    background-color: #202a38;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    max-width: 450px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.603);
+}
+#trabalhista{
+    background-color: #111720;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    max-width: 450px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.603);
+}
 .imagem-familia > i, .imagem-trabalhador > i, .imagem-digital > i{
     color: var(--cor_logo);
-    background-color: var(--cor_principal);
     border-radius: 50%;
-    padding: 15px;
-    font-size: 2em;
-    margin-top: 30px;
+    font-size: 3em;
+    margin: 30px 0 10px 0;
 }
 
 .dados-complementares > ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: start;
     text-align: center;
+    gap: 30px;
 }
 .dados-complementares > ul > li{
     list-style-type: none;
@@ -89,12 +128,14 @@ body, html{
 .dados-complementares > ul > li > strong{
     color: #c28d4c;
     font-family: 'Protest Strike';
-    font-size: 1.8em;
+    font-size: 5em;
 }
 .dados-complementares > ul > li > div{
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-family: 0.8em;
+    font-family: 1em;
 }
+
 .sobre-advogado{
     display: flex;
     flex-direction: column;
@@ -104,6 +145,10 @@ body, html{
     margin: 0 ;
     height: auto;
     width: 200px;
+    filter: drop-shadow(2px 2px 10px black);
+}
+.sobre-advogado > div{
+
 }
 .sobre-advogado > div > h1{
     text-align: center;
@@ -120,6 +165,7 @@ body, html{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
 }
 
 footer{
@@ -132,6 +178,16 @@ footer > div > ul{
     flex-direction: column;
     display: flex;
     align-items: center;
+}
+#contato-whatsapp{
+    margin: 20px 0 0 0;
+}
+#contato-whatsapp > a{
+    text-decoration: none;
+    color: white;
+}
+#contato-whatsapp > a > i{
+    margin-right: 10px;
 }
 footer > div > ul > a{
     text-decoration: none;

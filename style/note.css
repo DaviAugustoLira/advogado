@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    .navegacao{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: linear-gradient( to top, #11172000,#11172086, #111720);
+    }
+    header{
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
+    }
+    .cabecalho-links > a{
+        text-decoration: none;
+        color: white;
+        padding-right: 30px;
+    }
+    .cabecalho-logo{
+        height: 50px;
+        width: 50px;
+    }
+    .logo-imagem{
+        width: auto;
+        height: 250px;
+    }
+    .botao{
+        padding: 15px;
+        font-size: 1em;
+    }
+    
+    .atuacoes-secao{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+    .digital,.familiar,.trabalhista{
+        width: 300px;
+        border: 3px solid rgb(180, 163, 67);
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+    .digital{
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .trabalhista{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .familiar{
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .dados-complementares > ul > li > strong{
+        font-size: 5em;
+    }
+    .dados-complementares > ul > li > div{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .sobre-advogado{
+        display: flex;
+        flex-direction: row;
+        background-color: lightgray;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+   
+    .sobre-advogado p, h1{
+        max-width: 600px;
+    }
+    .sobre-advogado h1{
+        font-size: 2em;
+    }
+    .sobre-advogado p{
+        font-size: 1.2em;
+    }
+    
+   
+    .sobre-advogado img{
+        filter: drop-shadow(30px 30px 30px rgba(0, 0, 0, 0.404));
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer > div > ul{
+        flex-direction: column;
+        display: flex;
+        align-items: start;
+    }
+    footer iframe{
+        height: 200px;
+        width: 400px;
+    }
+}
