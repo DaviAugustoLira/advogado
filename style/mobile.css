@@ -31,6 +31,18 @@ body, html{
 .navegacao{
     display: none;
 }
+.cabecalho-links{
+    display: flex;
+    flex-direction: row;
+}
+.cabecalho-links > li{
+    list-style-type: none;
+}
+.cabecalho-links a{
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+}
 
 .cabecalho{
     background: url(../imagens/fundo02.jpg) center center no-repeat;
@@ -78,6 +90,9 @@ body, html{
 .atuacoes-secao p{
     text-align: justify;
     text-indent: 1.5em;
+}
+.imagens-secoes{
+    display: none;
 }
 #digital{
     background-color: #111720;
@@ -159,15 +174,23 @@ body, html{
 .sobre-advogado > div{
     margin-bottom: 0;
 }
-
+#contato-secao-sobre{
+    margin-bottom: 50px;
+    text-align: center;
+}
+#contato-secao-sobre > a{
+    font-size: 1.5em;
+    margin-right: 20px;
+}
 .sobre-advogado > div > h1{
+    margin-top: 20px;
     text-align: center;
     font-family: var(--fonte_logo);
 }
 .sobre-advogado > div > p{
     text-align: justify;
     text-indent: 1.5em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 8px;
 }
 .imagem-advogado{
@@ -191,22 +214,13 @@ footer > div > ul{
 #contato-whatsapp{
     margin: 20px 0 0 0;
 }
-#contato-whatsapp > a{
-    text-decoration: none;
-    color: white;
-}
-#contato-whatsapp > a > i{
-    margin-right: 10px;
+footer i{
+    margin-right: 8px;
 }
 footer > div > ul > a{
     text-decoration: none;
     color: white;
     margin: 20px 0 0 0;
-    
-}
-footer > div > ul > a > img{      
-    height: 20px;
-    width: 20px;
 }
 footer > iframe{
     width: auto;

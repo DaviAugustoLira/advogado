@@ -12,11 +12,6 @@
     header{
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
     }
-    .cabecalho-links > a{
-        text-decoration: none;
-        color: white;
-        padding-right: 30px;
-    }
     .cabecalho-logo{
         height: 50px;
         width: 50px;
@@ -32,7 +27,7 @@
     
     .atuacoes-secao{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
@@ -40,24 +35,98 @@
         margin-bottom: 100px;
         margin-top: 50px;
     }
-    .digital,.familiar,.trabalhista{
-        width: 300px;
-        border: 3px solid rgb(180, 163, 67);
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
+    .atuacoes-secao > h3{
+        font-size: 2em;
+        padding: 50px;
+        font-family: var(--fonte_logo);
     }
-    .digital{
-        border-bottom-left-radius: 50px;
-        border-top-right-radius: 50px;
+    #imagem-secao-digital{
+        background: url(../imagens/note-secao-digital.jpg);
+        height: 300px;
+        width: 500px;
     }
-    .trabalhista{
-        border-top-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+    .imagem-digital{
+        display: none;
     }
-    .familiar{
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+    .direito-digital{
+        width: 700px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .direito-digital > p,h1,h2{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #digital:hover{
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+
+    #imagem-secao-familiar{
+        background: url(../imagens/familia-secao-familia.jpg);
+        height: 300px;
+        width: 500px;
+    }
+    .imagem-familia{
+        display: none;
+    }
+    .direito-familiar{
+        width: 700px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .direito-familiar > p,h1,h2{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #familiar:hover{
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+
+    #imagem-secao-trabalhista{
+        background: url(../imagens/trabalhador-secao-trabalhista.jpg);
+        height: 300px;
+        width: 500px;
+    }
+    .imagem-trabalhador{
+        display: none;
+    }
+    .direito-trabalhista{
+        width: 700px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .direito-trabalhista > p,h1,h2{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #trabalhista:hover{
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+    #digital,#familiar,#trabalhista{
+        font-size: 1em;
+        max-width: 900px;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 30px;
     }
     .dados-complementares > ul > li > strong{
         font-size: 5em;
