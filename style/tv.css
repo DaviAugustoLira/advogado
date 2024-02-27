@@ -67,7 +67,6 @@
     }
     .direito-digital{
         width: 700px;
-        border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -77,11 +76,12 @@
         max-width: 500px;
         margin: 0 auto;
     }
-    #digital:hover{
+    .direito-digital:hover, #digital:hover{
         background-color: white;
         color: black;
         box-shadow: none;
     }
+
 
     #imagem-secao-familiar{
         background: url(../imagens/familia-secao-familia.jpg);
@@ -93,7 +93,6 @@
     }
     .direito-familiar{
         width: 700px;
-        border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -103,7 +102,7 @@
         max-width: 500px;
         margin: 0 auto;
     }
-    #familiar:hover{
+    .direito-familiar:hover, #familiar:hover{
         background-color: white;
         color: black;
         box-shadow: none;
@@ -119,7 +118,6 @@
     }
     .direito-trabalhista{
         width: 700px;
-        border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -129,7 +127,7 @@
         max-width: 500px;
         margin: 0 auto;
     }
-    #trabalhista:hover{
+    .direito-trabalhista:hover, #trabalhista:hover{
         background-color: white;
         color: black;
         box-shadow: none;
@@ -144,6 +142,7 @@
         border-radius: 10px;
         margin: auto;
         margin-bottom: 30px;
+        border-radius: none;
     }
     .dados-complementares > ul > li > strong{
         font-size: 6em;

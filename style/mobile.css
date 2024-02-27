@@ -17,6 +17,146 @@
     --fonte_logo: Woodland, serif;
     --fonte_numeros:"Protest Strike", sans-serif;
 }
+.dark-mode{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    box-shadow: none;
+}
+.dark-mode .cabecalho{
+    box-shadow: none;
+}
+.dark-mode .secao-cabecalho{
+    background-color: transparent;
+}
+.dark-mode .navegacao{
+    background-color: transparent;
+}
+.dark-mode section{
+    background-color: var(--cor_principal);
+    color: white;
+    box-shadow: none;
+}
+.dark-mode section > div{
+    background-color: var(--cor_principal);
+    color: white;
+}
+.dark-mode section > div > img{
+    filter: none;
+}
+.dark-mode div{
+    background-color: rgb(49, 48, 48);
+    color: white;
+}
+.dark-mode footer{
+    background-color: var(--cor_principal);
+    color: white;
+}
+.dark-mode footer > div{
+    background-color: var(--cor_principal);
+    color: white;
+}
+.dark-mode .direito-trabalhista{
+    background-color: var(--cor_principal);
+}
+.dark-mode #trabalhista{
+    box-shadow: none;
+}
+.dark-mode .direito-familiar{
+    background-color: var(--cor_principal);
+}
+.dark-mode #familiar{
+    box-shadow: none;
+}
+.dark-mode .direito-digital{
+    background-color: var(--cor_principal);
+}
+.dark-mode #digital{
+    box-shadow: none;
+}
+.dark-mode .dados-complementares{
+    background-color: var(--cor_principal);
+}
+.dark-mode .dados-complementares div{
+    background-color: var(--cor_principal);
+}
+.dark-mode .sobre-advogado div{
+    background-color: var(--cor_principal);
+}
+.dark-mode .sobre-advogado i{
+    color: white;
+}
+
+.dark-mode .imagem-familia{
+    background-color: var(--cor_principal);
+}
+.dark-mode #familiar {
+    background-color: var(--cor_principal);
+}
+.dark-mode .imagem-trabalhador{
+    background-color: var(--cor_principal);
+}
+.dark-mode .imagem-digital{
+    background-color: var(--cor_principal);
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+label{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+.botao-tema{
+    height: 30px;
+    width: 60px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    background-color: lightgrey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+input[type="checkbox"]:checked ~.botao-tema{
+    background-color: lightgrey;
+}
+.botao-tema::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: black;
+    width:24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked ~.botao-tema::before{
+    transform: translateX(-50px);
+}
+.botao-tema::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: white;
+    width:24px;
+    height: 24px;
+    border-radius: 50%;   
+    transition: 0.5s;
+    transform: translateX(60px);
+
+
+}
+input[type="checkbox"]:checked ~.botao-tema::after{
+    transform: translateX(0px);
+}
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +174,7 @@ body, html{
 .cabecalho-links{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .cabecalho-links > li{
     list-style-type: none;
@@ -177,10 +318,12 @@ body, html{
 #contato-secao-sobre{
     margin-bottom: 50px;
     text-align: center;
+    
 }
 #contato-secao-sobre > a{
     font-size: 1.5em;
     margin-right: 20px;
+    color: black;
 }
 .sobre-advogado > div > h1{
     margin-top: 20px;
