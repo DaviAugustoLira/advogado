@@ -108,6 +108,7 @@ label{
     display: flex;
     justify-content: end;
     margin-right: 50px;
+    padding-top: 10px;
 }
 .botao-tema{
     height: 30px;
