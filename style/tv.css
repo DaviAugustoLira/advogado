@@ -1,20 +1,29 @@
 @charset "UTF-8";
 
+:root{
+    --cor_principal:#111720;
+    --cor_botões: #2e2e4b;
+    --cor_logo: rgb(228, 188, 139);
+
+    --fonte_padrao: Arial, Helvetica;
+    --fonte_logo: Woodland, serif;
+    --fonte_numeros:"Protest Strike", sans-serif;
+}
+
 @media (min-width: 1201px){
     .navegacao{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
         background: linear-gradient( to top, #11172000,#11172086, #111720);
+        display: block;
     }
     header{
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
     }
+    .botao-div{
+        padding-right: 50px;
+    }
     .cabecalho-links > a{
         text-decoration: none;
         color: white;
-        padding-right: 30px;
     }
     .cabecalho-logo{
         height: 50px;
@@ -34,19 +43,105 @@
     }
     .atuacoes-secao{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
         text-align: center;
-        box-shadow: 2px 2px     10px rgba(0, 0, 0, 0.288);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
         margin-bottom: 100px;
         margin-top: 50px;
     }
+    .atuacoes-secao > h3{
+        font-size: 2em;
+        padding: 50px;
+        font-family: var(--fonte_logo);
+    }
+    #imagem-secao-digital{
+        background: url(../imagens/note-secao-digital.jpg);
+        height: 300px;
+        width: 500px;
+    }
+    .imagem-digital{
+        display: none;
+    }
+    .direito-digital{
+        width: 700px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .direito-digital > p,h1,h2{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .direito-digital:hover, #digital:hover{
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+
+
+    #imagem-secao-familiar{
+        background: url(../imagens/familia-secao-familia.jpg);
+        height: 300px;
+        width: 500px;
+    }
+    .imagem-familia{
+        display: none;
+    }
+    .direito-familiar{
+        width: 700px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .direito-familiar > p,h1,h2{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .direito-familiar:hover, #familiar:hover{
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
+
+    #imagem-secao-trabalhista{
+        background: url(../imagens/trabalhador-secao-trabalhista.jpg);
+        height: 300px;
+        width: 500px;
+    }
+    .imagem-trabalhador{
+        display: none;
+    }
+    .direito-trabalhista{
+        width: 700px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .direito-trabalhista > p,h1,h2{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .direito-trabalhista:hover, #trabalhista:hover{
+        background-color: white;
+        color: black;
+        box-shadow: none;
+    }
     #digital,#familiar,#trabalhista{
-        width: 450px;
-        height: auto;
         font-size: 1em;
-        border-radius: 20px;
+        max-width: 1400px;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 30px;
+        border-radius: none;
     }
     .dados-complementares > ul > li > strong{
         font-size: 6em;
@@ -63,12 +158,11 @@
         justify-content: space-around;
         margin-bottom: 50px;
     }
-   
     .sobre-advogado p, h1{
         max-width: 600px;
     }
     .sobre-advogado h1{
-        font-size: 2em;
+        font-size: 3em;
     }
     .sobre-advogado p{
         font-size: 1.2em;

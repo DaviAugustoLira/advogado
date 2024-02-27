@@ -10,19 +10,14 @@
     --fonte_numeros:"Protest Strike", sans-serif;
 }
 
-@media (min-width: 481px) and (max-width: 768px){
-    .navegacao{
-        display: none;
 
-    }
-}
-@media (min-width: 769px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px){
+
     .navegacao{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background: linear-gradient( to top, #11172000,#11172086, #111720);
+        display: block;
+    }
+    .botao-div{
+        padding-right: 50px;
     }
     header{
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.288);
@@ -46,7 +41,7 @@
     }
     .atuacoes-secao{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
         text-align: center;
@@ -54,12 +49,10 @@
         margin-bottom: 100px;
         margin-top: 50px;
     }
-    .digital,.familiar,.trabalhista{
-        width: 200px;
-        border: 2px solid rgb(180, 163, 67);
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
+    #digital,#familiar,#trabalhista{
+        width: 700px;
+        height: auto;
+        margin: 0 auto;
     }
     .digital{
         border-bottom-left-radius: 50px;
@@ -80,6 +73,11 @@
         text-align: center;
         margin-bottom: 50px;
     }
+    .atuacoes-secao > h3{
+        font-size: 2em;
+        padding: 50px;
+        font-family: var(--fonte_logo);
+    }
     .sobre-advogado{
         display: flex;
         flex-direction: row;
@@ -89,9 +87,12 @@
         margin-bottom: 50px;
     }
    
-    .sobre-advogado p, h1{
+    .sobre-advogado p{
         max-width: 500px;
-        
+        font-size: 1.2em;
+    }
+    .sobre-advogado h1{
+        font-size: 2em;
     }
     .sobre-advogado img{
         filter: drop-shadow(30px 30px 30px rgba(0, 0, 0, 0.404));
